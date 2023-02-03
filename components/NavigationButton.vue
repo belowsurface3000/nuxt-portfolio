@@ -9,9 +9,14 @@
 </template>
 
 <script lang="ts">
+    
+    // console.log(showNav)
+    import { storeToRefs } from 'pinia'
     import { useNavigationStore } from "@/stores/NavigationStore";
-    const { showNav, toggleNav } = useNavigationStore();
-    console.log(showNav)
+    const navigationStore = useNavigationStore();
+    const { toggleNav } = useNavigationStore();
+    const { showNav } = storeToRefs(navigationStore);
+
     export default {
         data() {
             return {
