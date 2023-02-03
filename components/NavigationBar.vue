@@ -1,5 +1,5 @@
 <template>
-    <nav class="navigation-hidden" :class={navigationhhidden:!store.state.showNav}>
+    <!-- <nav class="navigation-hidden" :class={navigationhhidden:!store.state.showNav}>
         <div>
             <a href="#top" v-on:click="toggleNav" v-smooth-scroll>Top</a>
             <a href="#about" v-on:click="toggleNav" v-smooth-scroll>About</a>
@@ -11,30 +11,18 @@
         <div>
             <p>Navigation</p>
         </div>
-    </nav>
+    </nav> -->
 </template>
 
 <script lang="ts">
-    import store from "../store";
 
-    export default {
-        data() {
-            return {
-                store,
-            }
-        }, 
-        methods: {
-            toggleNav() {
-                store.commit("toggleNav");
-            }
-        }
-    }
+
 </script>
 
 <style lang="scss">
-    @import "../styles/reset.scss";
-    @import "../styles/variables.scss";
-    @import "../styles/mixins.scss";
+    @import "../assets/styles/reset.scss";
+    @import "../assets/styles/variables.scss";
+    @import "../assets/styles/mixins.scss";
 
     // navigation for screens with a width above 1500px
     @media screen and (min-width: 1500px) {

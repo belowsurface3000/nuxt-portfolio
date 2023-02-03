@@ -1,6 +1,8 @@
 <template>
-    <div class="navigation-trigger" v-on:click="toggleNav">
-        <div class="nav-icon" :class="{open:store.state.showNav}" >
+    <div class="navigation-trigger" >
+        <div class="nav-icon"  >
+             <!-- <div class="navigation-trigger" v-on:click="toggleNav">
+        <div class="nav-icon" :class="{open:store.state.showNav}" > -->
             <span></span>
             <span></span>
             <span></span>
@@ -9,26 +11,16 @@
 </template>
 
 <script lang="ts">
-    import store from "../store";
-
-    export default {
-        data() {
-            return {
-                store,
-            }
-        },
-        methods: {
-            toggleNav() {
-                store.commit("toggleNav");
-            }
-        }
-    }
+    import { useNavigationStore } from "@/stores/NavigationStore";
+    const navigationStore = useNavigationStore();
+    console.log(navigationStore.showNav)
+    
 </script>
 
 <style lang="scss">
-    @import "../styles/reset.scss";
-    @import "../styles/variables.scss";
-    @import "../styles/mixins.scss";
+    @import "../assets/styles/reset.scss";
+    @import "../assets/styles/variables.scss";
+    @import "../assets/styles/mixins.scss";
 
     .navigation-trigger {
         position: fixed;

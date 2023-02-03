@@ -3,9 +3,9 @@
 </template>
 
 <style lang="scss">
-    @import "../styles/reset.scss";
-    @import "../styles/variables.scss";
-    @import "../styles/mixins.scss";
+    @import "../assets/styles/reset.scss";
+    @import "../assets/styles/variables.scss";
+    @import "../assets/styles/mixins.scss";
 
     .background-color {
         height: 100vh;
