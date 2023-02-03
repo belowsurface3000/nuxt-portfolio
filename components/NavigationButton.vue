@@ -1,8 +1,6 @@
 <template>
-    <div class="navigation-trigger" >
-        <div class="nav-icon"  >
-             <!-- <div class="navigation-trigger" v-on:click="toggleNav">
-        <div class="nav-icon" :class="{open:store.state.showNav}" > -->
+    <div class="navigation-trigger" v-on:click="toggleNav">
+        <div class="nav-icon" :class="{ open: showNav }" >
             <span></span>
             <span></span>
             <span></span>
@@ -12,9 +10,16 @@
 
 <script lang="ts">
     import { useNavigationStore } from "@/stores/NavigationStore";
-    const navigationStore = useNavigationStore();
-    console.log(navigationStore.showNav)
-    
+    const { showNav, toggleNav } = useNavigationStore();
+    console.log(showNav)
+    export default {
+        data() {
+            return {
+                showNav,
+                toggleNav
+            }
+        },
+    }
 </script>
 
 <style lang="scss">
