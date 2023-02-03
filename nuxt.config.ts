@@ -6,4 +6,11 @@ export default defineNuxtConfig({
     modules: [
         '@pinia/nuxt'
     ],
+    runtimeConfig: {
+        public: {
+            emailService: process.env.EMAIL_SERVICE,
+            emailTemplate: process.env.EMAIL_TEMPLATE,
+            emailUser: process.env.EMAIL_USER
+        }
+    }
 })

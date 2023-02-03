@@ -27,7 +27,6 @@
 <script lang="ts">
 
   import emailjs from 'emailjs-com';
-
   const unlockField = "";
 
   export default {
@@ -39,10 +38,16 @@
         message: ""
       }
     },
+    setup() { 
+      const runtimeConfig = useRuntimeConfig();
+      return {
+        runtimeConfig
+      }
+    },
     methods: {
       sendEmail(e: HTMLFormElement) {
         try {
-          // emailjs.sendForm(config.EMAIL_SERVICE, config.EMAIL_TEMPLATE, e.target, config.EMAIL_USER)
+            emailjs.sendForm(this.runtimeConfig.emailService, this.runtimeConfig.emailTemplate, e.target, this.runtimeConfig.emailUser)
         } catch(error) {
           console.log({ error })
         }
