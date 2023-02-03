@@ -1,12 +1,12 @@
 <template>
     <nav class="navigation-hidden" :class={navigationhhidden:!showNav}>
         <div>
-            <a href="#top" v-on:click="toggleNav" v-smooth-scroll>Top</a>
-            <a href="#about" v-on:click="toggleNav" v-smooth-scroll>About</a>
-            <a href="#services" v-on:click="toggleNav" v-smooth-scroll>Services</a>
-            <a href="#skills" v-on:click="toggleNav" v-smooth-scroll> Skills</a>
-            <a href="#references" v-on:click="toggleNav" v-smooth-scroll>References</a>
-            <a href="#contact" v-on:click="toggleNav" v-smooth-scroll>Contact</a>
+            <a href="#top" v-on:click="toggleNav">Top</a>
+            <a href="#about" v-on:click="toggleNav">About</a>
+            <a href="#services" v-on:click="toggleNav">Services</a>
+            <a href="#skills" v-on:click="toggleNav"> Skills</a>
+            <a href="#references" v-on:click="toggleNav">References</a>
+            <a href="#contact" v-on:click="toggleNav">Contact</a>
         </div>
         <div>
             <p>Navigation</p>

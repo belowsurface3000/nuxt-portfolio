@@ -42,7 +42,7 @@
     methods: {
       sendEmail(e: HTMLFormElement) {
         try {
-          emailjs.sendForm(process.env.VUE_APP_EMAIL_SERVICE, process.env.VUE_APP_EMAIL_TEMPLATE, e.target, process.env.VUE_APP_EMAIL_USER)
+          // emailjs.sendForm(config.EMAIL_SERVICE, config.EMAIL_TEMPLATE, e.target, config.EMAIL_USER)
         } catch(error) {
           console.log({ error })
         }

@@ -1,8 +1,4 @@
 <template>
-    <BackgroundDiv />
-    <NavigationButton />
-    <NavigationBar />
-
     <main>
         <HeaderView />
         <AboutView />
@@ -14,6 +10,8 @@
     </main>
 </template>
 
-<script lang="ts">
-
-</script>
+<style>
+    html {
+    scroll-behavior: smooth;
+    }
+</style>
