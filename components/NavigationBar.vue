@@ -1,5 +1,5 @@
 <template>
-    <!-- <nav class="navigation-hidden" :class={navigationhhidden:!store.state.showNav}>
+    <nav class="navigation-hidden" :class={navigationhhidden:!showNav}>
         <div>
             <a href="#top" v-on:click="toggleNav" v-smooth-scroll>Top</a>
             <a href="#about" v-on:click="toggleNav" v-smooth-scroll>About</a>
@@ -11,11 +11,24 @@
         <div>
             <p>Navigation</p>
         </div>
-    </nav> -->
+    </nav>
 </template>
 
 <script lang="ts">
+    import { storeToRefs } from 'pinia'; // for keeping the global state reactive here
+    import { useNavigationStore } from "@/stores/NavigationStore";
+    const navigationStore = useNavigationStore();
+    const { toggleNav } = useNavigationStore();
+    const { showNav } = storeToRefs(navigationStore);
 
+    export default {
+        data() {
+            return {
+                showNav,
+                toggleNav
+            }
+        },
+    }
 
 </script>
 

@@ -9,9 +9,7 @@
 </template>
 
 <script lang="ts">
-    
-    // console.log(showNav)
-    import { storeToRefs } from 'pinia'
+    import { storeToRefs } from 'pinia'; // for keeping the global state reactive here
     import { useNavigationStore } from "@/stores/NavigationStore";
     const navigationStore = useNavigationStore();
     const { toggleNav } = useNavigationStore();
