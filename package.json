@@ -2,14 +2,11 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "start": "nuxt start",
+    "start": "PORT= 3002 nuxt start",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
-  },
-  "nuxt": {
-    "port": 3002
   },
   "devDependencies": {
     "nuxt": "^3.1.1"
