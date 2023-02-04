@@ -3,7 +3,6 @@
   "scripts": {
     "build": "nuxt build",
     "start": "nuxt start",
-    "start3002": "PORT=3002 nuxt start",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",

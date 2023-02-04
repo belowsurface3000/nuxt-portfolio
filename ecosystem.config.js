@@ -2,11 +2,11 @@ module.exports = {
     apps: [
       {
         name: 'NuxtAppName',
+        port: '3002',
         exec_mode: 'cluster',
-        port: 3002,
         instances: 'max',
-        script: './node_modules/nuxt/bin/nuxt.js',
-        args: 'start',
-      },
-    ],
+        script: './.output/server/index.mjs'
+      }
+    ]
   }
+  
