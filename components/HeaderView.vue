@@ -1,5 +1,5 @@
 <template>
-    <header>
+    <header id="top">
         <picture>
             <source src="/images/bannerSmall.jpg" media="(max-width: 850px)" />
             <source src="/images/bannerMid.jpg" media="(max-width: 1600px)" />
