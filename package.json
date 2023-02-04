@@ -8,6 +8,9 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
+  "nuxt": {
+    "port": 3002
+  },
   "devDependencies": {
     "nuxt": "^3.1.1"
   },
