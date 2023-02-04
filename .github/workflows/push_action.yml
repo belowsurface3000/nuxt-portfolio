@@ -1,0 +1,20 @@
+name: Publish Nuxt Frontend
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update_ssh_linode:
+    name: Telling Linode to update the Nuxt frontend
+    runs-on: ubuntu-latest
+    steps:
+    - name: executing remote ssh commands using password
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: bash portfoliopush.sh
