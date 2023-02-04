@@ -260,53 +260,9 @@ main {
     :root {
         font-size: 90%;
     }
-    header {
-        .banner {  
-            > h1 {
-                font-size: 4rem;
-            }
-            > h1::before,
-            > h1::after {
-                margin: 0 10px;
-            }
-            > h4 {
-                font-size: 1.5rem;
-            }
-        }
-    }
 }
-@media screen and (max-width: 1050px) {
-    .navigation-trigger {
-        .nav-icon {
-            width: 40px;
-            height: 35px;
-            span {
-                height: 5.5px;
-            }
-            span:nth-child(1) {top: 0px;}
-            span:nth-child(2) {top: 15px;}
-            span:nth-child(3) {top: 30px;}
-        }
-        .open span:nth-child(1) {
-            top: 18px;
-        }
-        .open span:nth-child(3) {
-            top: 18px;
-        }
-    }
-    header {
-        .banner {  
-            > h1::before,
-            > h1::after {
-                content: none;
-            }
-            > div {
-                > h4 {
-                    font-size: 1.5rem;
-                }
-            }
-        }
-    }
+
+@media screen and (max-width: 1050px) { 
     main {
         .references {
             > div {
@@ -334,32 +290,10 @@ main {
         }
     }
 }
+
 @media screen and (max-width: 800px) {
     :root {
         font-size: 85%;
-    }
-    header {
-        > .banner {
-            > div {
-                flex-direction: column;
-                > h4 {
-                    font-size: 1.5rem;
-                    margin: 10px 0;
-                }
-                > h4:nth-of-type(1)::after,
-                > h4:nth-of-type(2)::after {
-                    content: none;
-                }
-            }
-        }
-    }
-    .navigation-trigger {
-        .nav-icon {
-            width: 40px;
-            span {
-                height: 5px;
-            }
-        }
     }
     h1, h2 {
         display: flex;
@@ -447,16 +381,6 @@ main {
         > div {
             > a {
                 font-size: 2rem;
-            }
-        }
-    }
-    .navigation-trigger {
-        margin: 15px;
-        .nav-icon {
-            width: 35px;
-            margin: 5px;
-            span {
-                height: 4px;
             }
         }
     }

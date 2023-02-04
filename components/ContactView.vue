@@ -47,7 +47,7 @@
     methods: {
       sendEmail(e: HTMLFormElement) {
         try {
-            emailjs.sendForm(this.runtimeConfig.emailService, this.runtimeConfig.emailTemplate, e.target, this.runtimeConfig.emailUser)
+          emailjs.sendForm(this.runtimeConfig.emailService, this.runtimeConfig.emailTemplate, e.target, this.runtimeConfig.emailUser)
         } catch(error) {
           console.log({ error })
         }
