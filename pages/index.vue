@@ -8,6 +8,7 @@
         <ContactView />
         <FooterView />
     </main>
+    <p>test</p>
 </template>
 
 <style>
