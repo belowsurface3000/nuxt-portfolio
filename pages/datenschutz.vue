@@ -1,9 +1,8 @@
 <template>
-    <BackgroundDiv />
     <main>
-        <div className="impressum">
+        <div class="impressum">
 
-            <div className="impressum-navigation">
+            <div class="impressum-navigation">
                 <a href="/">Back to the main page</a>
             </div>
 
