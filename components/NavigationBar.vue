@@ -6,6 +6,7 @@
             <a href="#services" v-on:click="toggleNav">Services</a>
             <a href="#skills" v-on:click="toggleNav"> Skills</a>
             <a href="#references" v-on:click="toggleNav">References</a>
+            <a href="#blog" v-on:click="toggleNav">Blog</a>            
             <a href="#contact" v-on:click="toggleNav">Contact</a>
         </div>
         <div>
