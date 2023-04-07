@@ -6,6 +6,7 @@
         <SkillsView />
         <ReferencesView />
         <ContactView />
+        <BlogView />
         <FooterView />
     </main>
 </template>
