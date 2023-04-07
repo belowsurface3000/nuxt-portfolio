@@ -16,3 +16,9 @@ Two pages are missing in the public repo /src/views/ for privacy reasons:
 - clone the repo
 - $ npm i
 - $ npm run dev
+
+This repo has two branches
+- development
+- main
+
+Only work in development and create merge requests to push new commits to main via GitHub.
