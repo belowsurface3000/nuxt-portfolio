@@ -1,42 +1,18 @@
-# Nuxt 3 Minimal Starter
+# Nuxt first try | Portfolio page
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Info
+After one year of React development this project was my first try with Vue.js and then Nuxt for SSR. The goal was convert my portfolio page from React to Vue/Nuxt and implementing functionalities like global state management, email sending and smooth scrolling to anchors within the main page.
+To get the contact form working, emailjs credentials are needed in an .env file under this variable names:
 
-## Setup
+VUE_APP_EMAIL_SERVICE=
+VUE_APP_EMAIL_TEMPLATE=
+VUE_APP_EMAIL_USER=
 
-Make sure to install the dependencies:
+Two pages are missing in the public repo /src/views/ for privacy reasons:
+- datenschutz.vue
+- impressum.vue
 
-```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
-```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## How to develop
+- clone the repo
+- $ npm i
+- $ npm run dev
